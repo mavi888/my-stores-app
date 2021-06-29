@@ -1,0 +1,8 @@
+type Store
+  @model
+  @auth(rules: [{ allow: owner, operations: [create, update, delete] }]) {
+  id: ID!
+  name: String!
+  longitude: String!
+  latitude: String!
+}
